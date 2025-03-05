@@ -1,4 +1,11 @@
-# 📓🧠 Engage & Apply: Create a Dictionary  ------------> Original
+# Lesson 3: Python Dictionaries - Engage & Apply + Final Challenge
+
+# ===========================
+# engage and apply ---------> Exercise 1 pre-provided
+# ===========================
+
+# Pre-provided Exercise: Create a Dictionary representing a book with keys like title, author, year, and genre. 
+# Add a publisher key and modify the year.
 
 book = {
     'title': '1984',
@@ -13,50 +20,39 @@ book['publisher'] = 'Secker & Warburg'
 # Modify the value for year
 book['year'] = 1950
 
-print(book)
+# Print the updated dictionary
+print("Pre-provided Exercise Output:", book)
 
-# Output
-"""
-{
-    'title': '1984',
-    'author': 'George Orwell',
-    'year': 1950,
-    'genre': 'Dystopian',
-    'publisher': 'Secker & Warburg'
-}
-"""
+# ===========================
+# engage and apply ---------> Exercise 1 My Version Created
+# ===========================
 
-# 📓🧠 Engage & Apply: Create a Dictionary (Your Own Way) ------------> My Example
+# My Version: Create a dictionary representing a movie. 
+# Include keys for title, director, release year, and genre. 
+# Add a new key for rating, then modify the release year.
 
 movie = {
-    'title': 'The Matrix',
-    'director': 'The Wachowskis',
-    'year': 1999,
-    'genre': 'Sci-Fi',
-    'rating': 8.7
+    'title': 'Inception',
+    'director': 'Christopher Nolan',
+    'release_year': 2010,
+    'genre': 'Science Fiction'
 }
 
-# Add a new key for lead actor
-movie['lead_actor'] = 'Keanu Reeves'
+# Add a new key for rating
+movie['rating'] = 8.8
 
-# Modify the value for rating
-movie['rating'] = 9.0
+# Modify the value for release year
+movie['release_year'] = 2012
 
-print(movie)
+# Print the updated dictionary
+print("My Version Output:", movie)
 
-# Output
-"""
-{
-    'title': 'The Matrix',
-    'director': 'The Wachowskis',
-    'year': 1999,
-    'genre': 'Sci-Fi',
-    'rating': 9.0,
-    'lead_actor': 'Keanu Reeves'
-}
-"""
+# ===========================
+# final challenge ---------> pre-provided
+# ===========================
 
-# 👾 Final Challenge: Student Grade Program  ------------> Original
+# Pre-provided Final Challenge: Write a program that takes a dictionary of students and their grades, 
+# then prints each student's name and whether they passed or failed.
 
 students = {
     'Alice': 85,
@@ -71,32 +67,22 @@ for student, grade in students.items():
     else:
         print(f"{student} failed.")
 
-# Output 
-"""
-Alice passed.
-Bob failed.
-Charlie passed.
-David failed.
-"""
+# ===========================
+# final challenge ---------> My Version Created
+# ===========================
 
-# 👾 Final Challenge: Student Grade Program (Your Own Way) ------------> My Example
+# My Version: Write a program that takes a dictionary of employees and their sales numbers, 
+# then prints each employee's name and whether they met their sales goal (consider the goal to be 100).
 
-players = {
-    'Michael': 30,
-    'Kobe': 25,
-    'LeBron': 18,
-    'Durant': 22
+employees = {
+    'Eve': 150,
+    'Mallory': 90,
+    'Trent': 120,
+    'Peggy': 50
 }
 
-for player, score in players.items():
-    if score > 20:
-        print(f"{player} scored over 20 points.")
+for employee, sales in employees.items():
+    if sales >= 100:
+        print(f"{employee} met the sales goal.")
     else:
-        print(f"{player} scored 20 or fewer points.")
-
-"""
-Michael scored over 20 points.
-Kobe scored over 20 points.
-LeBron scored 20 or fewer points.
-Durant scored over 20 points.
-"""
+        print(f"{employee} did not meet the sales goal.")
